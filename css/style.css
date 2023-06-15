@@ -121,6 +121,7 @@ a {
     color: #c3b9e6;
     background: linear-gradient(to right, #c3b9e6, #8a8888);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 100ms ease-out;
 }
@@ -133,6 +134,75 @@ a {
     display: block;
 }
 
+.dropdown2 {
+    position: relative;
+    transition: all 200ms ease;
+}
+
+@keyframes dropdown2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-content2 {
+    opacity: 0;
+    display: none;
+    transform: translateY(-10px);
+    animation: dropdown 0.3s ease forwards;
+}
+
+
+
+.dropdown-content2:not(.show) {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+}
+
+
+.dropdown-content2.show {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #514a72;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 180px;
+    margin-top: 15px;
+    padding: 15px;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 9px 30px 0 rgba(0, 0, 0, 0.1);
+    transition: all 200ms ease;
+}
+
+
+.dropdown-content2 a:hover {
+    border-radius: 15px;
+    background-color: #514a72;
+    color: #c3b9e6;
+    background: linear-gradient(to right, #c3b9e6, #8a8888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 100ms ease-out;
+}
+
+.dropdown-content2 a {
+    color: #a3a3a4;
+    padding: 12px 16px;
+    font-size: 1px;
+    text-decoration: none;
+    display: block;
+}
 
 /* ABOUT ME SECTION*/
 .about-me-wrapper {
@@ -247,6 +317,7 @@ h1 {
     color: #c3b9e6 !important;
     background: linear-gradient(to right, #c3b9e6, #8c8d8f);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 200ms ease-out;
 }
@@ -254,6 +325,7 @@ h1 {
 .dsc-icon {
     background: linear-gradient(to right, #c3b9e6, #413b5d);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 200ms ease-out;
 }
@@ -261,6 +333,7 @@ h1 {
 .social-icons:hover {
     /* background: linear-gradient(to right, #c3b9e6, #413b5d); */
     -webkit-background-clip: text;
+    background-clip: text;
     /* -webkit-text-fill-color: transparent; */
     /* transition: all 200ms ease-out; */
     transform: scale(1.07);
