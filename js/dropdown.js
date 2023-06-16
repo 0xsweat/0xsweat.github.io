@@ -33,10 +33,10 @@ dropdownLink2.addEventListener('click', () => {
 
     if (isDisplayed) {
         dropdownContent2.classList.remove('show');
-        dropdownLink2.innerHTML = '<i class="bx bx-menu"></i>';
+        dropdownLink2.innerHTML = '<i class="bx bxs-contact"></i>';
     } else {
         dropdownContent2.classList.add('show');
-        dropdownLink2.innerHTML = '<i class="bx bx-exit-fullscreen"></i>';
+        dropdownLink2.innerHTML = '<i class="bx bxs-x-circle"></i>';
     }
 
     dropdownContent2.classList.add('animate__animated', 'animate__fadeInDown');
