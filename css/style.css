@@ -427,6 +427,15 @@ p {
     transform: scale(1.05);
 }
 
+.rotate {
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    100% {
+    transform: rotate(-360deg);
+    }
+}
 @media screen and (max-width: 1200px) {
 
     .navbar {
