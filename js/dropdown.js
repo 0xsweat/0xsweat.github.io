@@ -33,7 +33,7 @@ dropdownLink2.addEventListener('click', () => {
 
     if (isDisplayed) {
         dropdownContent2.classList.remove('show');
-        dropdownLink2.innerHTML = '<i class="bx bxs-contact"></i>';
+        dropdownLink2.innerHTML = '<i class="bx bxs-user-check"></i>';
     } else {
         dropdownContent2.classList.add('show');
         dropdownLink2.innerHTML = '<i class="bx bxs-x-circle"></i>';
